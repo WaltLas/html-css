@@ -1,0 +1,221 @@
+body {
+    background-color:black;
+    color: #0f141e;
+    font-size: 16px;
+    font-weight: normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+
+p:first-letter {
+     color: red; 
+}
+h1:first-letter{
+     color: red;
+}
+h3:first-letter{
+     color: red;
+}
+
+
+.container{
+    max-width: 800px;
+    margin:auto;
+    background-color:black;
+    display: grid;
+    margin-bottom: 200px;
+    
+  }
+
+  @media (max-width: 750px) {
+
+    .textmodel{
+        text-align: center;
+        display: block;
+      }
+
+    .text2 {
+        text-align: left;
+        display: block;
+      }
+
+    .div1{
+        margin-left: 37%;
+    }
+    .div2{
+        text-align: center;
+        display: block;
+        padding-left: 20%;
+        box-sizing: border-box;
+      }
+    .button .btn{
+        margin-right: 10px;
+        margin-top: 15px;
+        padding: 0.4em 0.5em;
+    }
+    .boxmodel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+  }
+
+.fon{
+    background-image: url(Fon.jpg) ; 
+    
+}
+.boxmodel{
+    margin-top: 50px;
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+}
+
+  .boxmodel >div {
+    background: black;
+    box-sizing: border-box;
+  }
+
+.ava {
+border: 20%;
+max-width: 100%;
+height: 100%;
+}
+
+.textmodel >div {
+    color:white;
+    float: left;
+    background:none;
+    height: 50%;
+    position: relative;
+}
+.div1{
+    text-align: center;
+    width: 30%;
+    position: absolute;
+    left: 0;
+}
+
+.div2{
+    width: 69%;
+    position: absolute;
+    left: 0;
+    box-sizing: content-box;
+}
+
+.content >div {
+    float: left;
+    background: black;
+    border: 20px red;
+    height: 200px;
+    width: 25%;
+    box-sizing: border-box;
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+
+.h1,h2:hover {
+    color: red;
+}
+
+.ava:hover{
+    opacity: 0.5;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.ava2:hover{
+    opacity: 0.4;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.possition{
+width: 5px;
+height: 5px;
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background:white;
+    float:left;
+  } 
+
+.text2{
+    position: inherit;
+    float: left;
+    margin-left: 8%;
+}
+
+.text2 h3{
+   position: relative;
+   margin-top: 10px;
+}
+.text2 p{
+   position: relative;
+   bottom: 20px; 
+  
+}
+
+.third {
+    border-color: white;
+    color: black;
+    box-shadow: 0 0 40px 40px white inset, 0 0 0 0 red;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 0.6em;
+    color: black;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 40px;
+    margin-top: 5px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    float:right;
+    position: relative;
+  }
+  .btn:hover, .btn:focus {
+    color: black;
+    outline: 0;
+  }
+  
+.buttom {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+}
