@@ -7,6 +7,10 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.section1 {
+  background-image: url(Fon.jpg);
+}
+
 p:first-letter {
   color: red;
 }
@@ -20,14 +24,11 @@ h3:first-letter {
 .container {
   max-width: 800px;
   margin: auto;
-  background-color: black;
-  margin-bottom: 200px;
-  margin-top: 55px;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width:576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .menu__body {
     display: none;
   }
@@ -95,19 +96,14 @@ h3:first-letter {
   .textmodel {
     display: flex;
   }
-  .textmodel>div:first-child {
+  .textmodel > div:first-child {
     flex: 1;
-  }     
-  .textmodel>div:last-child {
+  }
+  .textmodel > div:last-child {
     flex: 3;
   }
 }
 
-.fon {
-  background-image: url(Fon.jpg);
-  width: 100%;
-  margin: auto;
-}
 .boxmodel {
   max-width: 800px;
   margin: auto;
@@ -130,7 +126,7 @@ h3:first-letter {
   height: 200px;
 }
 
-.textmodel  {
+.textmodel {
   color: white;
   background: none;
   height: 50%;
@@ -178,8 +174,7 @@ h2:hover {
 }
 
 .possition {
-  width: 5px;
-  height: 5px;
+  margin-bottom: 60px;
 }
 
 .box {
