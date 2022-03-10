@@ -21,20 +21,19 @@ h3:first-letter {
   max-width: 800px;
   margin: auto;
   background-color: black;
-  display: grid;
   margin-bottom: 200px;
   margin-top: 55px;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 850px) {
+@media (min-width:576px) and (max-width: 992px) {
   .menu__body {
     display: none;
   }
 
   .textmodel {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .text2 {
@@ -42,19 +41,10 @@ h3:first-letter {
     display: block;
   }
 
-  .div1 {
-    margin-left: 37%;
-  }
-  .div2 {
-    text-align: center;
-    display: block;
-    padding-left: 20%;
-    box-sizing: border-box;
-  }
   .button .btn {
     margin-right: 10px;
-    margin-top: 15px;
-    padding: 0.4em 0.5em;
+    margin-top: 10px;
+    padding: 0.9em 1.05em;
   }
   .boxmodel {
     width: 400px;
@@ -77,6 +67,42 @@ h3:first-letter {
   }
 }
 
+@media (max-width: 576px) {
+  .menu__body {
+    display: none;
+  }
+  .boxmodel {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+  }
+  .button .btn {
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 0.4em 0.5em;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textmodel {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .textmodel {
+    display: flex;
+  }
+  .textmodel>div:first-child {
+    flex: 1;
+  }     
+  .textmodel>div:last-child {
+    flex: 3;
+  }
+}
+
 .fon {
   background-image: url(Fon.jpg);
   width: 100%;
@@ -86,7 +112,6 @@ h3:first-letter {
   max-width: 800px;
   margin: auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -105,29 +130,16 @@ h3:first-letter {
   height: 200px;
 }
 
-.textmodel > div {
+.textmodel  {
   color: white;
-  float: left;
   background: none;
   height: 50%;
   position: relative;
-}
-.div1 {
-  text-align: center;
-  width: 30%;
-  left: 0;
-}
-
-.div2 {
-  width: 70%;
-  left: 0;
-  box-sizing: content-box;
 }
 
 .content {
   max-width: 800px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
