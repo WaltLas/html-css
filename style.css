@@ -28,6 +28,7 @@ h3:first-letter {
   flex-direction: column;
 }
 
+
 @media (min-width: 576px) and (max-width: 992px) {
   .menu__body {
     display: none;
@@ -52,6 +53,12 @@ h3:first-letter {
     flex-wrap: wrap;
     column-count: auto;
   }
+  /*.boxmodel img {
+     width: 500px; 
+  }
+   .content img { 
+      width: 500px;
+   } */
   .content {
     margin: inherit;
     width: 400px;
@@ -112,18 +119,20 @@ h3:first-letter {
 }
 
 .boxmodel div {
-  width: 200px;
   height: 200px;
+  
 }
 
 .ava {
   width: 200px;
   height: 200px;
+  /* transition: width 0.5s ease-out; */
 }
 
 .ava2 {
   width: 190px;
   height: 200px;
+  /* transition: width 0.5s ease-out; */
 }
 
 .textmodel {
@@ -148,6 +157,7 @@ h3:first-letter {
   color: white;
   text-align: left;
   height: 300px;
+  /* transition: width 0.5s ease-out; */
 }
 
 .h1,
@@ -249,8 +259,34 @@ h2:hover {
   outline: 0;
 }
 
-.buttom {
-  position: relative;
-  margin-top: 10px;
+.button {
   display: flex;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 55px;
+  border-radius: 5%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
